@@ -1,0 +1,11 @@
+{
+	"functions": {
+	  "api/**/*.js": {
+		"runtime": "nodejs18.x"
+	  }
+	},
+	"rewrites": [
+	  { "source": "/api/(.*)", "destination": "/backend/src/routes/$1" },
+	  { "source": "/(.*)", "destination": "/frontend/$1" }
+	]
+  }
